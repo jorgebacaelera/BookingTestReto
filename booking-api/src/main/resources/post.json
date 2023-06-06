@@ -1,0 +1,48 @@
+{
+   "payment_type_id":"{{payment_type_id}}",
+   "payment_method_id":"{{payment_method_id}}",
+   "transaction_amount":"{{transaction_amount}}",
+   "transaction_currency":"{{transaction_currency}}",
+   "payer":{
+   
+      "first_name":"{{payer.first_name}}",
+      "last_name":"{{payer.last_name}}",
+      "email":"{{payer.email}}",
+      "identification":{
+         "number":"{{payer.identification.number}}",
+         "type":"{{payer.identification.type}}"
+      },
+      "phone":{
+         "area_code":"{{payer.phone.area_code}}",
+         "number":"{{payer.phone.number}}"
+      },
+      "address":{
+         "zip_code":"{{payer.address.zip_code}}",
+         "street_name":"{{street_name}}",
+         "locality":"{{locality}}",
+         "country":"{{countryAddress}}"
+      }
+   },
+   "card":{
+      "token":"{{payment_token_card}}",
+      "save_token":"{{save_token}}",
+      "expiration_month":"{{expiration_month}}",
+      "expiration_year":"{{expiration_year}}",
+      "security_code": "{{security_code}}"
+   },
+   "description":"{{description}}",
+   "additional_info":[
+      {
+         "client_session_id":"{{client_session_id}}"
+      },
+      {
+         "decision_manager_fields":[
+           {
+               "key":"billTo_ipAddress",
+               "value":"127.0.0.1"
+            }
+            
+         ]
+      }
+   ]
+}

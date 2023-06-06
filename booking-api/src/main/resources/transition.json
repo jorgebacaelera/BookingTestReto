@@ -1,0 +1,5 @@
+{
+    "finger_print_id": "{{client_session_id}}",
+    "token": "{{payment_token_card}}",
+    "cvv": "123"
+}
